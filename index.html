@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+
+    <!--------------------------------------- Header ----------------------------------------------->
+    <header>
+      <a href="#home" class="logo"><span>Care & </span>Shine</a>
+
+      <ul class="navlist">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#collection">Colllection</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#promotion">Promotion</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="header-icons">
+          <a href="#new"><i class='bx bxs-shopping-bag' ></i></a>
+          <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+  </header>
+
+
+
+    <!--------------------------------------- BODY ----------------------------------------------->
+    <main id="#shop">
+      <div class="wrapper">
+        <div id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search product name here.."
+          />
+          <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">All</button>
+          <button class="button-value" onclick="filterProduct('Body')">
+            Body
+          </button>
+          <button class="button-value" onclick="filterProduct('Face')">
+            Face
+          </button>
+          <button class="button-value" onclick="filterProduct('Hair')">
+            Hair
+          </button>
+          <button class="button-value" onclick="filterProduct('Perfume')">
+            Perfume
+          </button>
+        </div>
+        <div id="products"></div>
+      </div>
+    </main>
+    
+    <!-- Script -->
+    <script src="Js/script.js"></script>
+  </body>
+</html>
